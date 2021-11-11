@@ -1,0 +1,18 @@
+#server.port=4001
+#spring.datasource.url=jdbc:postgresql://localhost:5432/boots
+#spring.datasource.username=postgres
+#spring.datasource.password=godpro
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.hibernate.ddl-auto = update
+
+
+
+server.port=4001
+spring.datasource.url=jdbc:postgresql://ec2-3-225-30-189.compute-1.amazonaws.com:5432/dcn723uo3bb447
+spring.datasource.username=hfppoongybmasa
+spring.datasource.password=8370206c0e898ad2c4107b0096022180cff455a844d950b0d622ceb5a5212ac4
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto = update
+
