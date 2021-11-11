@@ -50,9 +50,9 @@ public class BootController {
     public Boot deleteBoot(@PathVariable("id") Integer id) {
         Optional<Boot> optionalBoot = this.bootRepository.findById(id);
 
-        if(optionalBoot.isEmpty()) {
-            return null;
-        }
+//         if(optionalBoot.isEmpty()) {
+//             return null;
+//         }
 
         Boot bootToDelete = optionalBoot.get();
         this.bootRepository.delete(bootToDelete);
@@ -89,9 +89,9 @@ public class BootController {
     public Boot incrementQuantity(@PathVariable("id") Integer id) {
         Optional<Boot> bootOptional = this.bootRepository.findById(id);
 
-        if(bootOptional.isEmpty()) {
-            return null;
-        }
+//         if(bootOptional.isEmpty()) {
+//             return null;
+//         }
 
         Boot bootToUpdate = bootOptional.get();
         bootToUpdate.setQuantity(bootToUpdate.getQuantity() + 1);
@@ -103,9 +103,9 @@ public class BootController {
     public Boot decrementQuantity(@PathVariable("id") Integer id) {
         Optional<Boot> bootOptional = this.bootRepository.findById(id);
 
-        if(bootOptional.isEmpty()) {
-            return null;
-        }
+//         if(bootOptional.isEmpty()) {
+//             return null;
+//         }
 
         Boot bootToUpdate = bootOptional.get();
         if(bootToUpdate.getQuantity() > 0) {
